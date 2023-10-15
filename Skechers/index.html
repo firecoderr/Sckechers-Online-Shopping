@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta Tags ----------------------------------------------------------->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS Link ------------------------------------------------------------->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Google Fonst --------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;600;700;800;900&family=Pacifico&family=Paytone+One&family=Poppins:wght@100;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome --------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+    <!--------------
+        HEADEDR
+     -------------->
+    <header>
+        <div class="header-container">
+            <i class="fa-solid fa-bars toggle-btn"></i>
+
+            <a href="#" class="logo">Skechers</a>
+
+            <nav class="navbar">
+                <ul class="menu">
+                    <li class="menu-item"><a href="#" class="nav-link" onclick="toggleBtnLink()">главная</a></li>
+                    <li class="menu-item"><a href="#top" class="nav-link" onclick="toggleBtnLink()">товары</a></li>
+                    <li class="menu-item"><a href="#footer" class="nav-link" onclick="toggleBtnLink()">контакты</a></li>
+                </ul>
+            </nav>
+
+            <button class="shopping-cart">
+                <!-- paste Shopping card icon below -->
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </div>
+    </header>
+
+
+
+    <!--------------
+        CART BOX
+    --------------->
+    <div class="cart-box">
+        <h1 class="title">Моя Корзина</h1>
+        <div class="cart-item-container">
+
+            <!-- Cart Item Paste Here -->
+
+        </div>
+        <div class="total-price-box">
+            <h2>Всего:</h2>
+            <h2 class="total-price">TJS 0.00</h2>
+        </div>
+
+        <button class="btn-to-checkout">
+            Оформить Заказ
+        </button>
+
+        <i class="fa-solid fa-xmark close-cart"></i>
+    </div>
+
+
+
+    <!--------------
+        CHECKOUT
+    --------------->
+    <div class="checkout">
+        <form class="checkout-container" method="post">
+            <h1 class="title">Оформление Заказа</h1>
+
+            <label for="name">ФИО*</label>
+            <input placeholder="Иванов Иван Иванович" type="text" id="name" required>
+
+            <label for="phone">Номер телефона*</label>
+            <input placeholder="+992 xxx-xx-xx-xx" type="tel" id="phone" required>
+
+            <input type="submit" value="Оформить">
+        </form>
+
+        <button class="close-checkout">
+            <i class="fa-solid fa-arrow-left"></i>
+            Назад
+        </button>
+    </div>
+
+
+
+
+    <!--------------
+        BACK TO TOP
+    --------------->
+    <a href="#top" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+
+
+
+    <!--------------
+        MAIN
+     -------------->
+    <main>
+        <div class="main-container">
+            <!-- Hero Section ------------->
+            <section class="hero-container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Air Max</h1>
+                    
+                    <a href="index.html#top" class="hero-btn">Заказать</a>
+                </div>
+
+                <img src="./assets/images/hero images/pngwing.com (1).png" alt="image" class="hero-image">
+            </section>
+
+            <div class="search-bar" id="top">
+                <div class="search-bar-container">
+                    <h1 class="search-title">
+                        Все товары
+                    </h1>
+                    
+                    <div class="search-container">
+                        <input type="search" id="search-input" placeholder="Искать">
+                        <li class="fa-solid fa-search"></li>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Items ------------>
+            <section class="product-list">
+                <!-- data here -->
+            </section>
+
+            <!-- Product Pop-Up -->
+            <div class="product-pop-up">
+                <div class="product-pop-up-close">
+                    <button>
+                        <i class="fa-solid fa-arrow-left"></i>
+                        Назад
+                    </button>
+
+                    <li class="fa-solid fa-xmark"></li>
+                </div>
+
+                <div class="product-pop-up-container">
+                    <div class="product-pop-up-image">
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/c3e00e2f6cf248f0a00a04f58ab80161_9366/Grand_Court_2.0_Shoes_White_ID4469_01_standard.jpg" alt="image">
+                    </div>
+    
+                    <div class="product-information">
+                        <h1 class="title">
+                            Nike Air Max
+                        </h1>
+
+                        <h2 class="price">
+                            $3424
+                        </h2>
+    
+                        <div class="sizes">
+                            <label for="sizes">Размеры</label>
+                            <select id="sizes">
+                                <option value="volvo">38</option>
+                                <option value="saab">39</option>
+                                <option value="opel">40</option>
+                                <option value="audi">42</option>
+                              </select>
+                        </div>
+    
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, libero? Quibusdam rem nulla mollitia id totam recusandae. Tenetur modi natus hic sunt illum blanditiis quis dolorum, aliquam repellat vel reiciendis!
+                        </p>
+    
+                        <button class="add-to-cart-btn">
+                            Добавить в корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!--------------
+        FOOTER
+    --------------->
+    <footer id="footer">
+            <h1>Наши Контакты</h1>
+            <div></div>
+            <a href="mailto:contact@skechers.com" class="email">contact@skechers.com</a>
+            <ul>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </ul>
+            <span>&copyAll rights reserved</span>
+    </footer>
+
+    
+
+
+    <!-- JS Link ------------------------------------------------------------------->
+    <script src="./script.js"></script>
+    
+</body>
+</html>
